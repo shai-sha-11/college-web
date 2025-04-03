@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIC DIA / About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/dia-logo.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg py-4 fixed w-full z-50 transition-all duration-500 navhead">
+      <div class="container mx-auto flex justify-between items-center px-6">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center">
+              <img class="navlogo transition-transform hover:scale-105" src="images/dia-logo.png" alt="Logo">
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+          </button>
+
+          <!-- Navbar Links (Desktop) -->
+          <ul id="menu" class="hidden md:flex space-x-8 text-gray-700 font-medium">
+              <li><a href="index.html" class="hover:text-[var(--secondary-color)] transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[var(--secondary-color)] transition-colors">About</a></li>
+              <li><a href="courses.html" class="hover:text-[var(--secondary-color)] transition-colors">Courses</a></li>
+              <li><a href="facilities.html" class="hover:text-[var(--secondary-color)] transition-colors">Facilities</a></li>
+              <li><a href="contact.html" class="hover:text-[var(--secondary-color)] transition-colors">Contact</a></li>
+          </ul>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <ul id="mobile-menu" class="hidden flex-col space-y-4 text-center bg-white py-4 shadow-md md:hidden">
+          <li><a href="index.html" class="hover:text-[var(--secondary-color)] transition-colors block">Home</a></li>
+          <li><a href="about.html" class="hover:text-[var(--secondary-color)] transition-colors block">About</a></li>
+          <li><a href="courses.html" class="hover:text-[var(--secondary-color)] transition-colors block">Courses</a></li>
+          <li><a href="facilities.html" class="hover:text-[var(--secondary-color)] transition-colors block">Facilities</a></li>
+          <li><a href="contact.html" class="hover:text-[var(--secondary-color)] transition-colors block">Contact</a></li>
+      </ul>
+   </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/hero-about.png');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="text-center text-white relative z-10">
+            <h1 class="text-5xl font-bold">About <span class="text-[#977843]">Our College</span></h1>
+            <p class="mt-4 text-lg text-gray-200">A place of learning, excellence, and innovation.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-6 lg:px-20 text-center bg-white">
+        <h2 class="text-4xl font-extrabold text-[#074a53]">Our Story</h2>
+        <p class="mt-4 text-lg text-gray-600">
+            Established in 1995, our college has been a pioneer in education, fostering a culture of excellence and research-driven learning.
+        </p>
+        <div class="mt-10 flex flex-col lg:flex-row gap-10">
+            <div class="flex-1 p-6 bg-gray-50 shadow-lg rounded-xl">
+                <h3 class="text-2xl font-semibold text-[#074a53]">Our Mission</h3>
+                <p class="mt-2 text-gray-600">To provide top-quality education and create future leaders who innovate and inspire.</p>
+            </div>
+            <div class="flex-1 p-6 bg-gray-50 shadow-lg rounded-xl">
+                <h3 class="text-2xl font-semibold text-[#074a53]">Our Vision</h3>
+                <p class="mt-2 text-gray-600">To be a global leader in education, recognized for academic and research excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Achievements -->
+    <section class="py-20 bg-[#074a53] text-white text-center">
+        <h2 class="text-4xl font-extrabold">Our Achievements</h2>
+        <p class="mt-4 text-lg text-gray-300">Years of excellence and innovation in education.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-10">
+            <div class="p-6 bg-white/10 rounded-xl shadow-lg">
+                <h3 class="text-5xl font-bold text-[#977843]">25+</h3>
+                <p class="mt-2 text-gray-200">Years of Excellence</p>
+            </div>
+            <div class="p-6 bg-white/10 rounded-xl shadow-lg">
+                <h3 class="text-5xl font-bold text-[#977843]">200+</h3>
+                <p class="mt-2 text-gray-200">Qualified Professors</p>
+            </div>
+            <div class="p-6 bg-white/10 rounded-xl shadow-lg">
+                <h3 class="text-5xl font-bold text-[#977843]">10,000+</h3>
+                <p class="mt-2 text-gray-200">Successful Alumni</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-4xl font-extrabold text-[#074a53]">Meet Our Team</h2>
+        <p class="mt-4 text-lg text-gray-600">Our dedicated educators and leaders.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-10">
+            <div class="w-64 bg-gray-100 p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                <img src="images/persons/irshad.jpg" class="rounded-full mx-auto">
+                <h3 class="mt-4 text-xl font-semibold text-[#074a53]">Irshad Hudawi</h3>
+                <p class="text-gray-600">Principal</p>
+            </div>
+            <div class="w-64 bg-gray-100 p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                <img src="images/persons/nasir.jpg" class="rounded-full mx-auto">
+                <h3 class="mt-4 text-xl font-semibold text-[#074a53]">Nasir Hudawi</h3>
+                <p class="text-gray-600">Dean of Academics</p>
+            </div>
+            <div class="w-64 bg-gray-100 p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                <img src="images/persons/user.jpg" class="rounded-full mx-auto">
+                <h3 class="mt-4 text-xl font-semibold text-[#074a53]">Ibrahim Hudawi</h3>
+                <p class="text-gray-600">Administrator</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-4xl font-extrabold text-[#074a53]">Get in Touch</h2>
+        <p class="mt-4 text-lg text-gray-600">Have any questions? We'd love to hear from you.</p>
+        <form class="mt-10 max-w-lg mx-auto bg-white p-6 rounded-xl shadow-lg">
+            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 mb-4">
+            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 mb-4">
+            <textarea placeholder="Your Message" class="w-full p-3 rounded-md border border-gray-300 mb-4"></textarea>
+            <button class="w-full bg-[#074a53] text-white py-3 rounded-md font-semibold hover:bg-[#977843] transition">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-[#074a53] text-white py-16">
+      <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
+          
+          <!-- Logo & About -->
+          <div class="space-y-4">
+              <h2 class="text-3xl font-bold text-[#977843]">Darul Irshad Academy</h2>
+              <p class="text-gray-300 text-sm">
+                  A place of excellence in education, fostering innovation and shaping future leaders.
+              </p>
+              <div class="flex space-x-4">
+                  <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-x-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-[#977843]">Quick Links</h3>
+              <ul class="space-y-2">
+                  <li><a href="index.html" class="footer-link">Home</a></li>
+                  <li><a href="about.html" class="footer-link">About Us</a></li>
+                  <li><a href="courses.html" class="footer-link">Courses</a></li>
+                  <li><a href="#" class="footer-link">Admissions</a></li>
+                  <li><a href="contact.htm" class="footer-link">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-3">
+              <h3 class="text-xl font-semibold text-[#977843]">Contact Us</h3>
+              <p class="text-gray-300 text-sm">Chattanchal, Kasaragod, Kerala</p>
+              <p class="text-gray-300 text-sm">Email: middiachattanchal@gmail.com</p>
+              <p class="text-gray-300 text-sm">Phone: +123 456 7890</p>
+          </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Bar -->
+      <div class="border-t border-white/20 mt-10 pt-6 text-center text-gray-400 text-sm">
+          © 2025 MIC Darul Irshad Academy. All rights reserved.
+      </div>
+
+      <!-- Back to Top Button -->
+      <button id="backToTop" class="fixed bottom-6 right-6 w-14 h-14 bg-[#977843] text-[#074a53] font-bold text-xl rounded-full shadow-lg flex items-center justify-center transition transform scale-0">
+          ↑
+      </button>
+   </footer>
+
+   <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+    <script>
+        //nav bar scripts//
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+   
+</body>
+</html>
